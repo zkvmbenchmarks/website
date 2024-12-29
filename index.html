@@ -208,12 +208,12 @@
         <p style="text-indent: 30px;">       
             In the context of zkVMs, a cycle refers to one iteration of execution within the virtual machine's operational framework. It represents a discrete step during which the zkVM processes a set of instructions, evaluates constraints, or performs cryptographic operations. During each cycle, the zkVM executes one or more instructions from the program being run. Each cycle contributes to the construction of a zero-knowledge proof by defining which operations and constraints are included in the proof for the program's execution.
         </p>
+        <p style="text-indent: 30px;">       
+            The cycle count matters because the number of cycles required to execute a program directly impacts the zkVM's performance and the cost of generating/verifying the proof. zkVMs aim to minimize the number of cycles (and their computational overhead) to handle large-scale computations efficiently.
+        </p>
         <h2>Measuring Power Consumption</h2>
         <p style="text-indent: 30px;">       
             You are probably asking what do the units mean in the power consumption section, and how did we actually measure it. Since zkVMs are heavy on CPU (with respect to GPU, unless CUDA acceleration is used), we can assume that the power consumption is directly proportional to the CPU usage. So, we measured the average CPU usage during proving and multiplied it with proving time, to get a rough estimate of the power consumption. While CPU usage and proving time may change depending on the device being run, we expect the power consumption to stay the same regardless of the device being used to do the benchmarking.
-        </p>
-        <p style="text-indent: 30px;">       
-            The cycle count matters because the number of cycles required to execute a program directly impacts the zkVM's performance and the cost of generating/verifying the proof. zkVMs aim to minimize the number of cycles (and their computational overhead) to handle large-scale computations efficiently.
         </p>
         <h2>Aim of this Project</h2>
         <ul>
