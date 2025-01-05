@@ -1,0 +1,3 @@
+[submodule "zkvm_benchmarking_project"]
+	path = zkvm_benchmarking_project
+	url = git@github.com:zkvmbenchmarks/zkvm_benchmarking_project.git
