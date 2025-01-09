@@ -55,17 +55,18 @@ def process_results():
         "power_consumption": {},
     }
 
-    main_categories = {"fibonacci", "groth16", "isprime", "sort", "RSA", "SHA-2", "vecSum"};
+    main_categories = {"fibonacci", "isprime", "mergesort", "sha"};
     
     for metric in data:
         for category in main_categories:
             data[metric][category] = {}
             temp_dict = {}
-            for result_file in glob.glob("../results/*_benchmark_results"):
+            for result_file in glob.glob("zkvm_benchmarking_project/results/*_benchmark_results.txt"):
                 parsed_data = parse_proof_data(result_file)
+                result_file = result_file.split("/")[2]
                 if category.lower() in result_file.lower():
                     parts = result_file.split("_")
-                    zkvm = parts[0].split("/")[2]
+                    zkvm = parts[0]
                     specific_test = parts[1]
                     if specific_test in temp_dict:
                         temp_dict[specific_test].update({zkvm: parsed_data[metric]})
@@ -97,7 +98,7 @@ def parse_proof_data(result_file):
     patterns = {
         "proving_time": r"Proving time: ([\d.]+s)",
         "total_cycles": r"Total cycles: (\d+)",
-        "peak_memory_consumption": r"Peak memory consumption during proving: (\d+ KB)",
+        "peak_memory_consumption": r"Peak RAM usage: ([\d.]+ MiB)",
         "proof_size": r"Proof size: ([\d.]+ KB)",
         "verification_time": r"Verification time: ([\d.]+ms)",
         "memory_leak": r"Total memory leak: (\d+ KB)",
