@@ -51,7 +51,6 @@ def process_results():
         "peak_memory_consumption": {},
         "proof_size": {},
         "verification_time": {},
-        "memory_leak": {},
         "power_consumption": {},
     }
 
@@ -101,7 +100,6 @@ def parse_proof_data(result_file):
         "peak_memory_consumption": r"Peak RAM usage: ([\d.]+ MiB)",
         "proof_size": r"Proof size: ([\d.]+ KB)",
         "verification_time": r"Verification time: ([\d.]+ms)",
-        "memory_leak": r"Total memory leak: (\d+ KB)",
         "power_consumption": r"Total power consumption: (\d+ units)"
     }
 
