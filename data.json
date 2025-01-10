@@ -1,21 +1,21 @@
 {
   "proving_time": {
-    "isprime": {
-      "isprime": {
-        "risc0": "3.25 s",
-        "sp1": "7.78 s"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "3.26 s",
-        "sp1": "7.82 s"
+        "sp1": "7.82 s",
+        "risc0": "3.26 s"
       }
     },
     "mergesort": {
       "mergesort": {
         "risc0": "52.41 s",
         "sp1": "7.81 s"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "3.25 s",
+        "sp1": "7.78 s"
       }
     },
     "sha": {
@@ -26,22 +26,22 @@
     }
   },
   "total_cycles": {
-    "isprime": {
-      "isprime": {
-        "risc0": "65536",
-        "sp1": "4933"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "65536",
-        "sp1": "4932"
+        "sp1": "4932",
+        "risc0": "65536"
       }
     },
     "mergesort": {
       "mergesort": {
         "risc0": "1048576",
         "sp1": "4932"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "65536",
+        "sp1": "4933"
       }
     },
     "sha": {
@@ -52,22 +52,22 @@
     }
   },
   "peak_memory_consumption": {
-    "isprime": {
-      "isprime": {
-        "risc0": "2281.40 MiB",
-        "sp1": "3890.00 MiB"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "2389.70 MiB",
-        "sp1": "4050.90 MiB"
+        "sp1": "4050.90 MiB",
+        "risc0": "2389.70 MiB"
       }
     },
     "mergesort": {
       "mergesort": {
         "risc0": "9848.90 MiB",
         "sp1": "3894.40 MiB"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "2281.40 MiB",
+        "sp1": "3890.00 MiB"
       }
     },
     "sha": {
@@ -78,21 +78,21 @@
     }
   },
   "proof_size": {
-    "isprime": {
-      "isprime": {
-        "risc0": "214.77 KB",
-        "sp1": "2594.71 KB"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "214.78 KB",
-        "sp1": "2594.71 KB"
+        "sp1": "2594.71 KB",
+        "risc0": "214.78 KB"
       }
     },
     "mergesort": {
       "mergesort": {
         "risc0": "281.40 KB",
+        "sp1": "2594.71 KB"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "214.77 KB",
         "sp1": "2594.71 KB"
       }
     },
@@ -104,22 +104,22 @@
     }
   },
   "verification_time": {
-    "isprime": {
-      "isprime": {
-        "risc0": "18.46 ms",
-        "sp1": "221.48 ms"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "18.43 ms",
-        "sp1": "222.32 ms"
+        "sp1": "222.32 ms",
+        "risc0": "18.43 ms"
       }
     },
     "mergesort": {
       "mergesort": {
         "risc0": "23.24 ms",
         "sp1": "221.64 ms"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "18.46 ms",
+        "sp1": "221.48 ms"
       }
     },
     "sha": {
@@ -130,27 +130,27 @@
     }
   },
   "power_consumption": {
-    "isprime": {
-      "isprime": {
-        "risc0": "0 units",
-        "sp1": "448 units"
-      }
-    },
     "fibonacci": {
       "fibonacci": {
-        "risc0": "0 units",
-        "sp1": "378 units"
+        "sp1": "378 units",
+        "risc0": "183 units"
       }
     },
     "mergesort": {
       "mergesort": {
-        "risc0": "312 units",
+        "risc0": "156 units",
         "sp1": "483 units"
+      }
+    },
+    "isprime": {
+      "isprime": {
+        "risc0": "278 units",
+        "sp1": "448 units"
       }
     },
     "sha": {
       "sha": {
-        "risc0": "0 units",
+        "risc0": "216 units",
         "sp1": "448 units"
       }
     }
